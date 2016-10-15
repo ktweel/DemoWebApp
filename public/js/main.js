@@ -23,6 +23,8 @@ function getWeather(searchQuery) {
     success: function (data) {
       $('.city').text(data.name);
       $('.temp').text(data.main.temp + ' °F');
+    }, error: function(error) {
+    	$('.error-message').text('An erro occurred!');
     }
   });
 }
