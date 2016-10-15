@@ -30,7 +30,7 @@ function getWeather(searchQuery) {
 }
 
 
-function searchWeatehr() {
+function searchWeather() {
 	var searchQuery = $('.search').val();
 	getWeather(searchQuery);
 }
