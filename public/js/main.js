@@ -7,7 +7,7 @@ $(document).ready(function() {
 	getWeather();
 });
 
-function getWeather(data) {
+function getWeather(searchQuery) {
   var url = 'http://api.openweathermap.org/data/2.5/weather?';
   var params = {
   	APPID: apiKey,
