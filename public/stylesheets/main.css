@@ -33,3 +33,10 @@ main {
 .weather{
 	font-size: 16px;
 }
+
+
+.general-container {
+  float: left;
+  justify-content: space-around;
+  text-align: left;
+}
