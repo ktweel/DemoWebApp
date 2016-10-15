@@ -1,7 +1,4 @@
 
-function myFunction() {
-  document.getElementById("demo").innerHTML = "NEWWW PARAGRAPH #javascript #swag";
-}
 
 $(document).ready(function() {
 	getWeather();
@@ -23,6 +20,7 @@ function getWeather(searchQuery) {
     success: function (data) {
       $('.city').text(data.name);
       $('.temp').text(data.main.temp + ' °F');
+      $('.description').text(data.weather[0].description);
     }, error: function(error) {
     	$('.error-message').text('An erro occurred!');
     }

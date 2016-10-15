@@ -6,32 +6,39 @@
 
 </head>
 
-<body>
+<body class="container">
 
   <header>
     <% include ../partials/nav %>
   </header>
 
-<main>
-  <h1>YOYO web apps are so cool</h1>
+  <main>
 
-  <p id="demo">
-    This is me testing out a lil html file
+    <div class="jumbotron">
+    <h1>Kathryn Tweel</h1>
+    <p>Computer Science | Tufts</p>
 
-    hi
-  </p>
+    </div>
 
-  <button type="button" onclick="myFunction()">
-    Try it
-  </button>
+    <div class="content">
 
-  <div class="city"></div>
-  <div class="temp"></div>
+    <div class="weather">
+  
+    <p class="weather">Here's the weather in 
+    <span class="city"></span>!
+    </p>
+    <p class="weather"> The temperature is 
+    <span class="temp"></span>
+    </p>
+    <p class="weather"> And the weather is 
+    <span class="description"></span>
+    </p>
+    </div>
 
-  <input class="search" type="text" placeholder="Enter City name..." />
-  <button type="button" onclick="searchWeather()"> Search </button>
-
-</main>
+    <input class="search" type="text" placeholder="Enter City name..." />
+    <button type="button" onclick="searchWeather()"> Search </button>
+    </div>
+  </main>
 
 <footer>
 
